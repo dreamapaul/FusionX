@@ -17,15 +17,15 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" exact element={<HomePage/>}></Route>
-            <Route path="/addproducts" exact element={AddProducts}></Route>
-            <Route path="/categories" exact element={Categories}></Route>
-            <Route path="/choosetheme" exact element={ChooseTheme}></Route>
-            <Route path="/customizetheme" exact element={CustomizeTheme}></Route>
-            <Route path="/login" exact element={Login}></Route>
-            <Route path="/profile" exact element={Profile}></Route>
-            <Route path="/signin" exact element={SignIn}></Route>
-            <Route path="/storedetails" exact element={StoreDetails}></Route>
-            <Route path="/userhome" exact element={UserHome}></Route>
+            <Route path="/addproducts" exact element={<AddProducts/>}></Route>
+            <Route path="/categories" exact element={<Categories/>}></Route>
+            <Route path="/choosetheme" exact element={<ChooseTheme/>}></Route>
+            <Route path="/customizetheme" exact element={<CustomizeTheme/>}></Route>
+            <Route path="/login" exact element={<Login/>}></Route>
+            <Route path="/profile" exact element={<Profile/>}></Route>
+            <Route path="/signin" exact element={<SignIn/>}></Route>
+            <Route path="/storedetails" exact element={<StoreDetails/>}></Route>
+            <Route path="/userhome" exact element={<UserHome/>}></Route>
 
           </Routes>
         </div>
