@@ -32,6 +32,7 @@ const StoreDetails = () => {
                 <Input className="storeinput" placeholder='Enter the Store Name' maxWidth='800px'/>
                 <Text className="uploadlogo">Upload Logo</Text>
                 <Box className='uploadbox'>
+                    <Button className='upload' textColor='#8C8D93'variant='outline'>Upload</Button>  
                     <Text className='fileformat'>.jpg , .jpeg , .pdf , .svg files</Text>
                 </Box>
                 <Text className="storedesc">Store Description</Text>
