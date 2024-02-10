@@ -13,26 +13,28 @@ const Login = () => {
         <Box className='bg'>
             <Image className="image" src='/images/logo.svg' />
             <Image className="line" src='/images/line_1.svg' />
-            <Text className="logintext">Login To Your Account</Text>
-            <Image className="eclipse" src='/images/Eclipse_1.svg'></Image>
-            <Image className="bright_1" src='/images/bright_1.svg'></Image>
-            <Image className="eclipse_2" src='/images/Eclipse_2.svg'></Image>
-            <Image className="bright_2" src='/images/bright_2.svg'></Image>
+            <Text className="logintext">Log In To<br/>Your Account</Text>
+            
             <Input
                 className="username-input"
-                placeholder='Username'
                 value={username}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setUsername(e.target.value)}
             />
-            <br />
+            <Text className="name-text">Userame</Text>
             <Input
                 className="password-input"
-                placeholder='Password'
                 type="password"
                 value={password}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <Button className='loginbtn' onClick={handleLogin}>Login</Button>
+            <Text className="name-text">Password</Text>
+            <Button className='loginbtn' onClick={handleLogin}extColor='#FFFF' borderRadius='16px'>Login</Button>
         </Box>
     );
 }

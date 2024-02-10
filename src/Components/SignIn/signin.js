@@ -1,9 +1,9 @@
 import './signin.css';
-import {Box, Image, Text, Button, Input} from '@chakra-ui/react';
+import { Box, Image, Text, Button, Input } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const SignIn = () => {
+const Signup = () => {
     const [name, setName] = useState('');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -19,38 +19,46 @@ const SignIn = () => {
             <Image className="bright_2" src='/images/bright_2.svg'></Image>
             <Input
                 className="name-input"
-                placeholder='Name'
                 value={name}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setName(e.target.value)}
             />
-            <br/>
+             <Text className="name-text">Name</Text>
             <Input
                 className="uname-input"
-                placeholder='Username'
                 value={username}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setUsername(e.target.value)}
             />
-            <br/>
+            <Text className="name-text">UserName</Text>
             <Input
                 className="email-input"
                 type='email'
-                placeholder='Email'
                 value={email}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setEmail(e.target.value)}
             />
-            <br/>
+            <Text className="name-text">E-Mail</Text>
             <Input
                 className="pass-input"
                 type='password'
-                placeholder='Password'
                 value={password}
+                variant='outline'
+                height='60px'
+                maxWidth='375px'
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <br/>
-            <Button className='signupbtn'>Sign Up</Button>
-        <Text className='already'>Already have an account?</Text>
-        <Link to={'/login'} className='link'>Login</Link>
+            <Text className="name-text">Password</Text>
+            <Button className='signupbtn' textColor='#FFFF' borderRadius='16px'>Sign Up</Button>
+            <Link to={'/login'}className='already'>Already have an account?</Link>
+            <Link to={'/login'} className='link'>Log In</Link>
         </Box>
-        );
-    }
-export default SignIn;
+    );
+}
+export default Signup;

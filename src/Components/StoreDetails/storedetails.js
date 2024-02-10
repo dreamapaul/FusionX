@@ -1,5 +1,5 @@
 import './storedetails.css';
-import {Box,Text,Image,Tabs,Tab,TabList, Input, Button, Textarea, HStack,PinInput,PinInputField} from '@chakra-ui/react';
+import {Box,Text,Image,Tabs,Tab,TabList, Input, Button, Textarea, HStack,PinInput,PinInputField,Link} from '@chakra-ui/react';
 import { AiOutlineCaretRight } from 'react-icons/ai';
 const StoreDetails = () => {
     return (
@@ -67,7 +67,9 @@ const StoreDetails = () => {
                     </PinInput>
                 </HStack>   
             </Box>
-            <Button className='proceed' rightIcon={<AiOutlineCaretRight/>}  textColor='#8C8D93' variant='outline'>Proceed</Button>
+            <Link to={'/addproducts'}>
+                <Button className='proceed' rightIcon={<AiOutlineCaretRight/>}  textColor='#8C8D93' variant='outline'>Proceed</Button>
+            </Link>
         </Box>
         );
     }
